@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Future Tech Catalyst 2025</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="field.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/e8fafd4bab1ff229bb62067775369b8d?family=Thunderhouse+Pro" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/490cb0e45f39580c7ba1b856f2f1f4a7?family=Righteous" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/f389091962d8dab9ec69c5060e2e023c?family=Press+Start+2P" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav>
+            <div class="logo">
+                <img id="logo1" src="asset/logo copy.png" alt="Future Tech Logo">
+                <img id="logo2" src="asset/IEEE-Logo.jpg" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="field.html">FIELD TEAM</a></li>
+                <li><a href="research.html">RESEARCH TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <div class="tablet-area">
+                <div class="code-anim" id="codeAnim"></div>
+                <div class="spline-viewer">
+                    <spline-viewer url="https://prod.spline.design/YTMQwJb5m8bO29mF/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="boxleft">
+                    <div class="box">
+                        <img src="asset/field1.png" alt="Field Team Member 1">
+                        <h3>Dr. Alistair Finch</h3>
+                        <p>Lead Field Engineer</p>
+                    </div>
+                    <div class="box">
+                        <img src="asset/field2.png" alt="Field Team Member 2">
+                        <h3>Ms. Clara Zhang</h3>
+                        <p>Field Operations Specialist</p>
+                    </div>
+                    <div class="box">
+                        <img src="asset/field3.png" alt="Field Team Member 3">
+                        <h3>Mr. Raj Patel</h3>
+                        <p>Logistics Coordinator</p>
+                    </div>
+                </div>
+                
+                <div class="boxright">
+                    <div class="box">
+                        <img src="asset/field1.png" alt="Field Team Member 1">
+                        <h3>Dr. Alistair Finch</h3>
+                        <p>Lead Field Engineer</p>
+                    </div>
+                    <div class="box">
+                        <img src="asset/field2.png" alt="Field Team Member 2">
+                        <h3>Ms. Clara Zhang</h3>
+                        <p>Field Operations Specialist</p>
+                    </div>
+                    <div class="box">
+                        <img src="asset/field3.png" alt="Field Team Member 3">
+                        <h3>Mr. Raj Patel</h3>
+                        <p>Logistics Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+
+        <script>
+            const codeLines = [
+                "function helloWorld() {",
+                "    console.log('Hello, Future Tech!');",
+                "}",
+                "",
+                "helloWorld();",
+                " * @file            quantum-synapse.js",
+                " * @description     Handles quantum data synchronization for Project Chimera.",
+                " * @version         7.3.1-alpha",
+                " * @license         MIT",
+                " * @date            2025-02-15",
+                " * @author          Dr. Alistair Finch",
+                " * @company         Future Tech Catalyst",
+                " * @project         Project Chimera - Quantum Synapse Protocol",
+                " * @description     Asynchronous data stream synchronizer for quantum matrix nodes.",
+                " * This script handles the encryption, buffering, and transmission of",
+                " * neuro-data packets via the Q-Net protocol. Do not deploy without",
+                " * a certified Flux Capacitor unit.",                      
+                
+                "const SYNAPSE_ENDPOINT = 'wss://api.quantum-nexus.cloud/v7/syncc",
+                "const MAX_PACKET_SIZE = 4096; // in Bytes",
+                "const RETRY_LIMIT = 5; // Maximum retries for connection",
+                "const RETRY_DELAY_MS = 2500;",
+                "const ENCRYPTION_KEY = 'ch1m3rA-k3y-s3cr3t-p4$$w0rd';",
+                "let isQuantumLinkActive = false;",
+                "let dataBuffer = [];",
+                "async function initializeQuantumLink() {",
+                    "    console.log('[SYS] Initializing Quantum Link...');",
+                    "    try {",
+                    "        const connectionStatus = await connectToSynapse(SYNAPSE_ENDPOINT, RETRY_LIMIT);",
+                    "        console.log(`[OK] Connection successful: ${connectionStatus}`);",
+                    "        isQuantumLinkActive = true;",
+                    "        listenForDataStreams();",
+                    "    } catch (error) {",
+                    "        console.error(`[FATAL] Failed to establish quantum link: ${error.message}`);",
+                    "        handleProtocolError(error.code || 'E-001');",
+                    "        isQuantumLinkActive = false;",
+                    "    }",
+                "}",
+                "function connectToSynapse(endpoint, retries) {",
+                    "    console.log(`[NET] Attempting to connect to ${endpoint}... Retries left: ${retries}`);",
+                    "    return new Promise((resolve, reject) => {",
+                        "        setTimeout(() => {",
+                            "            if (Math.random() > 0.2) { // 80% success chance",
+                                "resolve('Synapse handshake complete. Awaiting data.');",                       
+                            "} else {",
+                                "if (retries > 0) {",
+                                    "connectToSynapse(endpoint, retries - 1).then(resolve).catch(reject);",
+                                "} else {",
+                                    "reject(new Error('Max connection retries exceeded.'));",
+                                "}",
+                            "}",
+                        "}, RETRY_DELAY_MS);",
+                    "});",
+                "}",
+                "function listenForDataStreams() {",
+                    "if (!isQuantumLinkActive) {",
+                        "console.warn('[WARN] Data stream listener halted. No active quantum link.');",
+                        "return;",
+                    "}",
+                    "console.log('[STREAM] Listening for incoming neuro-data packets...');",
+                    "setInterval(() => {",
+                        "const newPacket = generateRandomDataPacket();",            
+                        "console.log(`[RECV] New packet received. Size: ${newPacket.length} bytes.`);",
+                        "const processedPacket = processDataMatrix(newPacket);",
+                        "dataBuffer.push(processedPacket);",
+                        "if (dataBuffer.length > 10) {",
+                            "console.log('[BUFFER] Buffer full. Transmitting bundled data...');",
+                            "transmitEncryptedBundle(dataBuffer);",
+                            "dataBuffer = []; // Clear buffer after transmission",
+                        "}",
+                    "}, 5000); // Check for new data every 5 seconds",
+                "}",
+                "function processDataMatrix(rawData) {",
+                    "let sum = rawData.reduce((a, b) => a + b, b, 0);",
+                    "let avg = sum / rawData.length;",
+                    "let transformedVector = rawData.map(val => (val * Math.PI) / avg);",
+                    "return {",
+                        "timestamp: new Date().toISOString(),",         
+                        "vector: transformedVector,",
+                        "checksum: generateChecksum(transformedVector),",
+                    "};",
+                "}",
+                
+            ];
+            const codeElem = document.getElementById('codeAnim');
+            let line = 0, char = 0, output = '', typing;
+
+            function typeLine() {
+                if (line < codeLines.length) {
+                    if (char < codeLines[line].length) {
+                        output += codeLines[line][char];
+                        char++;
+                        codeElem.innerHTML = output + '<span class="cursor">|</span>';
+                        setTimeout(typeLine, 10);
+                    } else {
+                        output += '\n';
+                        char = 0;
+                        line++;
+                        setTimeout(typeLine, 100);
+                    }
+                } else {
+                    codeElem.innerHTML = output + '<span class="cursor">|</span>';
+                }
+            }
+            typeLine();
+        </script>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.33/build/spline-viewer.js"></script>
+
+    </body>
+</html>
